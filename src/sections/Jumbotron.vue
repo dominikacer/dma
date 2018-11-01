@@ -24,8 +24,8 @@
                 </div>
                 <transition name="fade" mode="out-in">
                     <div v-if="showMenu" key="1" v-bind:class="{hidden : !showMenu}" v-on:click="showMenu = !showMenu" class="hello-body">
-                        <h1 class="hello--title">Your new facorite digital agency<span class="accent">.</span></h1>
-                        <p class="hello--subtitle">We are digittal design, development and marketing specialists who turn ideas and business requirements into digital solutions. And we're always looking for new challenges.</p>
+                        <h1 class="hello--title">Your new favourite <br> digital agency<span class="accent">.</span></h1>
+                        <p class="hello--subtitle custom-p">We are digittal design, development and marketing specialists who turn ideas and business requirements into digital solutions. And we're always looking for new challenges.</p>
                     </div>
                     <div v-else key="2" v-bind:class="{active : !showMenu}" v-on:click="showMenu = !showMenu"  class="hello-menu">
                         <ul class="hello-menu-wrapper">
@@ -201,9 +201,6 @@ export default {
                 max-width: 50%;
             }
             .hello--subtitle{
-                font-size: 20px;
-                line-height: 44px;
-                color: $font-grey;;
                 max-width: 40%;
                 position: relative;
                 margin: 0;

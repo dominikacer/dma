@@ -36,3 +36,18 @@ $light-grey: #5c5c5d;
 .accent{
     color: $accent;
 }
+
+// ===========================================
+// TEXTS
+// ===========================================
+
+.title-big{
+    font-size: 68px;
+    line-height: 80px;
+}
+
+.custom-p{
+    font-size: 20px;
+    line-height: 44px;
+    color: $font-grey;
+}
