@@ -1,0 +1,38 @@
+@import '~styles/fonts';
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway';
+}
+
+// =============================================
+// VARIABLES
+// =============================================
+
+$light: #fff;
+$accent: #ffc609;
+$dark: #000;
+$font-grey: #c9cacd;
+$light-grey: #5c5c5d;
+
+// =============================================
+// TRANSITIONS
+// =============================================
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s
+}
+.fade-enter, .fade-leave-to {
+    opacity: 0
+}
+
+// ============================================
+// CLASSES
+// ============================================
+.accent{
+    color: $accent;
+}
