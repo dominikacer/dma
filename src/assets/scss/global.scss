@@ -46,8 +46,35 @@ $light-grey: #5c5c5d;
     line-height: 80px;
 }
 
+.title-med{
+    font-size: 23px;
+    margin: 10px 0;
+}
+
 .custom-p{
     font-size: 20px;
     line-height: 44px;
     color: $font-grey;
+}
+
+%animateTitleBefore{
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    height: 2px;
+    width: 150px;
+    background: $accent;
+    @keyframes animateTitleBefore{
+        0%{
+            width: 0;
+        }
+        50%{
+            width: 150px;
+        }
+        100% {
+            width: 0;
+        }
+    }
+    animation: animateTitleBefore 5s infinite;
 }

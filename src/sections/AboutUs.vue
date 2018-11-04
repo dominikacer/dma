@@ -39,25 +39,7 @@ export default {
         .aboutus-title{
             position: relative;
             &:before{
-                position: absolute;
-                left: 0;
-                top: 0;
-                content: "";
-                height: 2px;
-                width: 150px;
-                background: $accent;
-                @keyframes animateTitleBefore{
-                    0%{
-                        width: 0;
-                    }
-                    50%{
-                        width: 150px;
-                    }
-                    100% {
-                        width: 0;
-                    }
-                }
-                animation: animateTitleBefore 5s infinite;
+                @extend %animateTitleBefore;
             }
         }
         .aboutus-subtitle{
