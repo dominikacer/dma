@@ -5,6 +5,7 @@
     <AboutUs />
     <WhatWeDo />
     <Plan />
+    <Opinions />
   </div>
 </template>
 
@@ -13,6 +14,7 @@ import Jumbotron from './sections/Jumbotron';
 import AboutUs from './sections/AboutUs';
 import WhatWeDo from './sections/WhatWeDo';
 import Plan from './sections/Plan';
+import Opinions from './sections/Opinions';
 
 export default {
   name: 'App',
@@ -20,7 +22,8 @@ export default {
     Jumbotron,
     AboutUs,
     WhatWeDo,
-    Plan
+    Plan,
+    Opinions
   }
 }
 </script>
