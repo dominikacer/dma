@@ -25,7 +25,7 @@ export default {
 @import '~styles/global.scss';
 
 .aboutus{
-    padding: 200px 100px;
+    padding: 100px;
     display: flex;
     &_image{
         width: 50%;
