@@ -48,7 +48,7 @@ export default {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 100px;
+    padding: 200px 100px;
     &_title{
         width: 40%;
         .title-big{
