@@ -7,6 +7,7 @@
     <Plan />
     <Opinions />
     <Projects />
+    <Footer />
   </div>
 </template>
 
@@ -17,6 +18,7 @@ import WhatWeDo from './sections/WhatWeDo';
 import Plan from './sections/Plan';
 import Opinions from './sections/Opinions';
 import Projects from './sections/Projects';
+import Footer from './sections/Footer'
 
 export default {
   name: 'App',
@@ -26,7 +28,8 @@ export default {
     WhatWeDo,
     Plan,
     Opinions,
-    Projects
+    Projects,
+    Footer
   } 
 }
 </script>

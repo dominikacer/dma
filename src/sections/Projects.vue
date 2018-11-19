@@ -116,6 +116,7 @@ export default {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        max-width: 1600px;
         .single_project{
             width: 25%;
             padding: 0 10px;
