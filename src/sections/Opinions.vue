@@ -1,9 +1,9 @@
 <template>
     <div class="opinions">
         <div class="opinions_title">
-            <h2 class="title-big">Our clients say about working together<span class="accent">?</span></h2>
+            <h2 class="title-big" data-aos="fade-up" data-aos-delay="350">Our clients say about working together<span class="accent">?</span></h2>
         </div>
-        <carousel class="quote" :nav="false" :autoplay="true" :items="1">
+        <carousel class="quote" :nav="false" :autoplay="true" :items="1" data-aos="fade-left" data-aos-delay="550">
             <div class="quote_slide">
                 <p class="quote_slide-opinion custom-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <p class="quote_slide-info">~ John Snow, GOT.com</p>

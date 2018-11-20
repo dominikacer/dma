@@ -3,17 +3,17 @@
         <div class="footer_outer">
             <div class="footer_wrapper">
                 <div class="footer_content_left">
-                    <h2 class="title-big">Contact</h2>
-                    <p class="custom-p">Ready to start something new and amazing with us?</p>
-                    <p class="custom-p">Just say hello!</p>
-                    <div class="footer_details">
+                    <h2 class="title-big" data-aos="fade-up" data-aos-delay="350">Contact</h2>
+                    <p class="custom-p" data-aos="fade-up" data-aos-delay="550">Ready to start something new and amazing with us?</p>
+                    <p class="custom-p" data-aos="fade-up" data-aos-delay="650">Just say hello!</p>
+                    <div class="footer_details" data-aos="fade-up" data-aos-delay="750">
                         <p class="footer_label">Email Address</p>
                         <p class="footer_info">hello@dma.pl</p>
                         <p class="footer_label">Telephone</p>
                         <p class="footer_info">+48 555 444 333</p>
                     </div>
                 </div>
-                <div class="footer_content_right">
+                <div class="footer_content_right" data-aos="fade-up" data-aos-delay="350">
                     <img src="~images/poland.svg" alt="">
                 </div>
             </div>
@@ -21,7 +21,6 @@
         <div class="copyright">
             <div class="copyright_wrapper">
                 <p>© 2018. All rights reserved.</p>
-                <p class="js-back-to-top">BACK TO TOP</p>
             </div>
         </div>
     </footer>

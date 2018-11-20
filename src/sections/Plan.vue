@@ -1,8 +1,8 @@
 <template>
     <div id="plan" class="plan">
         <div class="plan_work">
-            <h2 class="title-big light">#Plan<span class="accent">.</span></h2>
-            <p class="custom-p">DMA #Lab is our in-house innovation group. Lab team improves your business in a world of progressive technology and looks for solutions you might never have even thought of before. The market is constantly evolving. WDF Lab helps drives this evolution by transferring its constant flow of technical innovation and ideas into real world applications.</p>
+            <h2 class="title-big light" data-aos="fade-up" data-aos-delay="350">#Plan<span class="accent">.</span></h2>
+            <p class="custom-p" data-aos="fade-up" data-aos-delay="500">DMA #Lab is our in-house innovation group. Lab team improves your business in a world of progressive technology and looks for solutions you might never have even thought of before. The market is constantly evolving. WDF Lab helps drives this evolution by transferring its constant flow of technical innovation and ideas into real world applications.</p>
             <div class="plan_box">
                 <div class="plan_box-single">
                     <p class="plan_box-title light">Idea<span class="accent">.</span></p>
@@ -12,7 +12,7 @@
             </div>
         </div>
         <div class="plan_features">
-            <h2 class="title-big light">#Creative<span class="accent">.</span></h2>
+            <h2 class="title-big light" data-aos="fade-up" data-aos-delay="350">#Creative<span class="accent">.</span></h2>
             <div class="plan_features-single">
                 <p class="plan_features-title light">Quality<span class="accent">.</span></p>
                 <p class="plan_features-title light">Solid<span class="accent">.</span></p>

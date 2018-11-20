@@ -10,6 +10,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "vanilla-tilt": "^1.5.0",
     "vue": "^2.5.2",
     "vue-owl-carousel": "^2.0.3",

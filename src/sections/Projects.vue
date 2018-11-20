@@ -1,8 +1,8 @@
 <template>
     <div class="projects">
-        <h2 class="title-big light">Recent Projects<span class="accent">.</span></h2>
+        <h2 class="title-big light" data-aos="fade-up" data-aos-delay="350">Recent Projects<span class="accent">.</span></h2>
         <div class="projects_wrapper">
-            <div class="single_project">
+            <div class="single_project" data-aos="flip-up" data-aos-delay="500">
                 <figure class="single_project-image">
                     <img src="~images/project.jpeg" alt="">
                 </figure>
@@ -12,7 +12,7 @@
                     <div class="project-tech">#UX/UI #Design</div>
                 </div>
             </div>
-            <div class="single_project">
+            <div class="single_project" data-aos="flip-up" data-aos-delay="700">
                 <figure class="single_project-image">
                     <img src="~images/project.jpeg" alt="">
                 </figure>
@@ -22,7 +22,7 @@
                     <div class="project-tech">#Analize #Marketing</div>
                 </div>
             </div>
-            <div class="single_project">
+            <div class="single_project" data-aos="flip-up" data-aos-delay="900">
                 <figure class="single_project-image">
                     <img src="~images/project.jpeg" alt="">
                 </figure>
@@ -32,7 +32,7 @@
                     <div class="project-tech">#UX/UI #Design #Coding #Programming</div>
                 </div>
             </div>
-            <div class="single_project">
+            <div class="single_project" data-aos="flip-up" data-aos-delay="1100">
                 <figure class="single_project-image">
                     <img src="~images/project.jpeg" alt="">
                 </figure>
@@ -42,7 +42,7 @@
                     <div class="project-tech">#SEO #Marketing</div>
                 </div>
             </div>
-            <div class="single_project">
+            <div class="single_project" data-aos="flip-up" data-aos-delay="1300">
                 <figure class="single_project-image">
                     <img src="~images/project.jpeg" alt="">
                 </figure>
@@ -52,7 +52,7 @@
                     <div class="project-tech">#Programming #Hosting</div>
                 </div>
             </div>
-            <div class="single_project">
+            <div class="single_project" data-aos="flip-up" data-aos-delay="1500">
                 <figure class="single_project-image">
                     <img src="~images/project.jpeg" alt="">
                 </figure>
@@ -62,7 +62,7 @@
                     <div class="project-tech">#UX/UI #Design #Coding #Programming</div>
                 </div>
             </div>
-            <div class="single_project" data-tilt>
+            <div class="single_project" data-aos="flip-up" data-aos-delay="1700">
                 <figure class="single_project-image">
                     <img src="~images/project.jpeg" alt="">
                 </figure>
@@ -72,7 +72,7 @@
                     <div class="project-tech"></div>
                 </div>
             </div>
-            <div class="single_project" data-tilt>
+            <div class="single_project" data-aos="flip-up" data-aos-delay="1900">
                 <figure class="single_project-image">
                     <img src="~images/project.jpeg" alt="">
                 </figure>
