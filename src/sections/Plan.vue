@@ -40,9 +40,11 @@ export default {
     transition: color 0.25s;
     position: relative;
     padding: 10px;
-    @media(max-width: $screen-sm){
+    width: min-content;
+    @media(max-width: $screen-md){
         font-size: 30px;
-        margin: 10px;
+        margin: 10px 0;
+        width: min-content;
     }
     &::before,
     &::after{
@@ -91,10 +93,16 @@ export default {
     background-position: 500px 0;
     display: flex;
     margin-top: 250px;
-    @media(max-width: $screen-sm){
+    @media (max-width: $screen-xl){
+        margin-top: 150px;
+    }
+    @media(max-width: $screen-md){
         margin-top: 100px;
         flex-direction: column;
         background-position: center;
+        @media (max-width: $screen-md){
+            margin-top: 30px;
+        }
     }
     &_work{
         padding: 150px 100px;
@@ -103,16 +111,28 @@ export default {
         background-color: #151617;
         margin-top: -50px;
         margin-bottom: 50px;
-        @media(max-width: $screen-sm){
-            margin-top: 0;
+        @media (max-width: $screen-xl){
+            width: 75%;
+            padding: 150px 70px 150px 30px;
+        }
+        @media(max-width: $screen-md){
+            margin: 0;
             width: 100%;
             padding: 10px 15px;
+        }
+        p{
+            @media (max-width: $screen-md){
+                max-width: 80%;
+            }
         }
     }
     &_box{
         &-single{
             display: flex;
             justify-content: space-around;
+            @media (min-width: $screen-md) and (max-width: $screen-xl){
+                margin: 0 -15px;
+            }
             @media(max-width: $screen-sm){
                 flex-direction: column;
             }
@@ -124,13 +144,23 @@ export default {
     &_features{
         padding: 100px;
         width: 50%;
+        @media (max-width: $screen-xl){
+            padding: 100px 0;
+        }
+        @media (max-width: $screen-md){
+            padding: 10px 15px 40px;
+            width: 100%;
+        }
         @media(max-width: $screen-sm){
-            padding: 10px 15px;
+            padding: 10px 15px 20px;
             width: 100%;    
         }
         &-single{
             display: flex;
             justify-content: space-between;
+            @media (max-width: $screen-xl){
+                flex-direction: column;
+            }
             @media(max-width: $screen-sm){
                 flex-direction: column;
             }

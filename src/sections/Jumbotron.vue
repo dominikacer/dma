@@ -83,7 +83,10 @@ export default {
     background-color: rgba(0,0,0, 0.7);
     height: 100%;
     display: flex;
-    @media (max-width: $screen-sm){
+    @media (max-width: $screen-xl){
+        clip-path: polygon(0 0, 85% 0, 70% 100%, 0% 100%);
+    }
+    @media (max-width: $screen-md){
         clip-path: unset;
         flex-direction: column;
     }
@@ -93,7 +96,7 @@ export default {
         flex-direction: column;
         height: 100%;
         justify-content: space-between;
-        @media (max-width: $screen-sm){
+        @media (max-width: $screen-md){
             padding: 15px;
             flex-direction: row; 
             align-items: center;
@@ -104,7 +107,7 @@ export default {
             color: $light;
             font-weight: 700;
             transform: rotate(-45deg);
-            @media (max-width: $screen-sm){
+            @media (max-width: $screen-md){
                 transform: unset;
             }
         }
@@ -112,12 +115,12 @@ export default {
             .hello_socials{
                 list-style-type: none;
                 padding: 0;
-                @media (max-width: $screen-sm){
+                @media (max-width: $screen-md){
                     display: flex;
                 }
                 &-list{
                     padding: 10px 0;
-                    @media (max-width: $screen-sm){
+                    @media (max-width: $screen-md){
                         margin: 0 10px;
                     }
                     &-link{
@@ -137,7 +140,7 @@ export default {
         flex-direction: column;
         justify-content: center;
         padding: 50px 0;
-        @media (max-width: $screen-sm){
+        @media (max-width: $screen-md){
             flex-direction: row;   
             align-items: center;
             height: 100%;
@@ -150,7 +153,7 @@ export default {
             transform: rotate(0deg);
             transition: .5s ease-in-out;
             cursor: pointer;
-            @media (max-width: $screen-sm){
+            @media (max-width: $screen-md){
                 left: 15px;
                 top: 100px;
             }
@@ -230,7 +233,17 @@ export default {
                 font-size: 64px;
                 line-height: 88px;
                 max-width: 50%;
-                @media (max-width: $screen-sm){
+                @media (max-width: 1450px){
+                    max-width: 45%;
+                }
+                @media (max-width: $screen-xl){
+                    max-width: 75%;
+                    font-size: 52px;
+                    line-height: 64px;
+                    margin-top: 120px;
+                }
+                @media (max-width: $screen-md){
+                    margin-top: 20px;
                     font-size: 36px;
                     max-width: 100%;
                     line-height: 46px;
@@ -242,7 +255,10 @@ export default {
                 max-width: 40%;
                 position: relative;
                 margin: 0;
-                @media (max-width: $screen-sm){
+                @media (max-width: $screen-xl){
+                    max-width: 65%;
+                }
+                @media (max-width: $screen-md){
                     max-width: 100%;
                     padding: 0 15px;
                     text-align: center;
@@ -278,7 +294,10 @@ export default {
             list-style-type: none;
             .hello-menu-item{
                 line-height: 80px;
-                @media (max-width: $screen-sm){
+                @media (max-width: $screen-xl){
+                    line-height: 55px;
+                }
+                @media (max-width: $screen-md){
                     line-height: 60px;
                 }
                 .hello-menu-item-link{
@@ -289,7 +308,10 @@ export default {
                     text-transform: uppercase;
                     letter-spacing: 1.5px;
                     position: relative;
-                    @media (max-width: $screen-sm){
+                    @media (max-width: $screen-xl){
+                        font-size: 35px;
+                    }
+                    @media (max-width: $screen-md){
                         font-size: 32px;
                     }
                     &:after{

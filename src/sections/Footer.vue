@@ -44,15 +44,21 @@ export default {
         padding: 100px;
         max-width: 1600px;
         margin: 0 auto;
-        @media(max-width: $screen-sm){
-            padding: 10px 15px;    
+        @media (max-width: $screen-lg){
+            padding: 100px 30px;
+        }
+        @media(max-width: $screen-md){
+            padding: 10px 15px 30px;    
         }
     }
     .footer_wrapper{
         display: flex;
         align-items: center;
         padding: 0 100px;
-        @media(max-width: $screen-sm){
+        @media (max-width: $screen-lg){
+            padding: 0 30px;
+        }
+        @media(max-width: $screen-md){
             flex-direction: column;
             padding: 0 15px;    
         }
@@ -60,9 +66,10 @@ export default {
     .footer_content_right{
         margin-left: 150px;
         img{
-            max-width: 100%;
+            max-width: 400px;
+            width: 100%;
         }
-        @media(max-width: $screen-sm){
+        @media(max-width: $screen-md){
             margin-left: 0;    
         }
     }
@@ -76,13 +83,13 @@ export default {
         font-size: 32px;
         font-weight: 700;
         margin: 5px 0 30px;
-        @media(max-width: $screen-sm){
+        @media(max-width: $screen-md){
             font-size: 24px;    
         }
     }
     .footer_details{
         margin-top: 50px;
-        @media(max-width: $screen-sm){
+        @media(max-width: $screen-md){
             margin-top: 20px;    
         }
         .footer_position,
@@ -97,7 +104,7 @@ export default {
     .copyright{
         padding: 15px 0;
         background-color: #151617;
-        @media(max-width: $screen-sm){
+        @media(max-width: $screen-md){
             padding: 15px;    
         }
         .copyright_wrapper{
@@ -107,6 +114,9 @@ export default {
             font-size: 14px;
             display: flex;
             justify-content: space-between;
+            @media (max-width: $screen-lg){
+                padding: 0 15px;
+            }
             .js-back-to-top{
                 font-size: 14px;
                 text-transform: uppercase;

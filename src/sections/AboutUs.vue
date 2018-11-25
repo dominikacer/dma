@@ -31,25 +31,36 @@ export default {
 .aboutus{
     padding: 100px;
     display: flex;
-    @media(max-width: $screen-sm){
+    @media (max-width: $screen-lg){
         flex-direction: column;
+        padding: 20px 30px;
+    }
+    @media(max-width: $screen-md){
         padding: 20px 15px;
     }
     &_image{
         width: 50%;
-        @media(max-width: $screen-sm){
+        @media(max-width: $screen-lg){
             width: 100%;
+            text-align: center;
         }
         img{
             max-width: 100%;
+            @media(max-width: $screen-lg){
+                max-width: 750px;
+                width: 100%;
+            }
         }
     }
     &_content{
         padding-left: 110px;
         width: 50%;
-        @media(max-width: $screen-sm){
+        @media(max-width: $screen-lg){
             width: 100%;
             padding: 0 10px;
+        }
+        @media (max-width: $screen-md){
+            padding: 0;
         }
         .aboutus-title{
             position: relative;

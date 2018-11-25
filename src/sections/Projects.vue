@@ -113,7 +113,7 @@ export default {
     background-color: #151617;
     padding: 100px 10%;
     @media(max-width: $screen-sm){
-        padding: 20px 10%;       
+        padding: 10px 10% 20px;       
     }
     &_wrapper{
         display: flex;
@@ -131,6 +131,10 @@ export default {
             display: flex;
             justify-content: center;
             align-items: center;
+            @media (max-width: $screen-md){
+                width: 50%;
+                max-width: 320px;
+            }
             @media(max-width: $screen-sm){
                 width: 100%;
                 margin: 20px auto;

@@ -5,15 +5,15 @@
         </div>
         <carousel class="quote" :nav="false" :autoplay="true" :items="1" data-aos="fade-left" data-aos-delay="550">
             <div class="quote_slide">
-                <p class="quote_slide-opinion custom-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="quote_slide-opinion custom-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiumdod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <p class="quote_slide-info">~ John Snow, GOT.com</p>
             </div>
             <div class="quote_slide">
-                <p class="quote_slide-opinion custom-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="quote_slide-opinion custom-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiumdod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <p class="quote_slide-info">~ John Snow, GOT.com</p>
             </div>
             <div class="quote_slide">
-                <p class="quote_slide-opinion custom-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="quote_slide-opinion custom-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiumdod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <p class="quote_slide-info">~ John Snow, GOT.com</p>
             </div>
         </carousel>
@@ -49,12 +49,15 @@ export default {
     flex-wrap: wrap;
     align-items: center;
     padding: 200px 100px;
-    @media(max-width: $screen-sm){
+    @media (max-width: $screen-lg){
+        padding: 30px 30px 50px;
+    }
+    @media(max-width: $screen-md){
         padding: 30px 15px 50px;
     }
     &_title{
         width: 40%;
-        @media(max-width: $screen-sm){
+        @media(max-width: $screen-md){
             width: 100%;    
         }
         .title-big{
@@ -69,7 +72,7 @@ export default {
     }
     .quote{
         width: 60%;
-        @media(max-width: $screen-sm){
+        @media(max-width: $screen-md){
             width: 100%;    
         }
         &_slide{
