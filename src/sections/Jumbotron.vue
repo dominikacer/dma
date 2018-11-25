@@ -45,6 +45,9 @@
 <script>
 export default {
     name: 'Jumbotron',
+    props: [
+        'window_width'
+    ],
     data() {
         return{
             showMenu: true
@@ -62,7 +65,7 @@ export default {
             }, 3000)
             
         }
-    }
+    },
 }
 </script>
 <style lang="scss">
@@ -80,24 +83,43 @@ export default {
     background-color: rgba(0,0,0, 0.7);
     height: 100%;
     display: flex;
+    @media (max-width: $screen-sm){
+        clip-path: unset;
+        flex-direction: column;
+    }
     &_nav{
         padding: 50px 35px;
         display: flex;
         flex-direction: column;
         height: 100%;
         justify-content: space-between;
+        @media (max-width: $screen-sm){
+            padding: 15px;
+            flex-direction: row; 
+            align-items: center;
+            height: auto;
+        }
         &--logo{
             font-size: 40px;
             color: $light;
             font-weight: 700;
             transform: rotate(-45deg);
+            @media (max-width: $screen-sm){
+                transform: unset;
+            }
         }
         &--socials{
             .hello_socials{
                 list-style-type: none;
                 padding: 0;
+                @media (max-width: $screen-sm){
+                    display: flex;
+                }
                 &-list{
                     padding: 10px 0;
+                    @media (max-width: $screen-sm){
+                        margin: 0 10px;
+                    }
                     &-link{
                         color: $light;
                         text-decoration: none;
@@ -115,6 +137,11 @@ export default {
         flex-direction: column;
         justify-content: center;
         padding: 50px 0;
+        @media (max-width: $screen-sm){
+            flex-direction: row;   
+            align-items: center;
+            height: 100%;
+        }
         .hello-burger{
             width: 60px;
             height: 45px;
@@ -123,6 +150,10 @@ export default {
             transform: rotate(0deg);
             transition: .5s ease-in-out;
             cursor: pointer;
+            @media (max-width: $screen-sm){
+                left: 15px;
+                top: 100px;
+            }
             span{
                 display: block;
                 position: absolute;
@@ -199,11 +230,23 @@ export default {
                 font-size: 64px;
                 line-height: 88px;
                 max-width: 50%;
+                @media (max-width: $screen-sm){
+                    font-size: 36px;
+                    max-width: 100%;
+                    line-height: 46px;
+                    padding: 0 15px;
+                    text-align: center;
+                }
             }
             .hello--subtitle{
                 max-width: 40%;
                 position: relative;
                 margin: 0;
+                @media (max-width: $screen-sm){
+                    max-width: 100%;
+                    padding: 0 15px;
+                    text-align: center;
+                }
                 &:before{
                     position: absolute;
                     left: -50px;
@@ -235,6 +278,9 @@ export default {
             list-style-type: none;
             .hello-menu-item{
                 line-height: 80px;
+                @media (max-width: $screen-sm){
+                    line-height: 60px;
+                }
                 .hello-menu-item-link{
                     font-size: 40px;
                     color: $light;
@@ -243,6 +289,9 @@ export default {
                     text-transform: uppercase;
                     letter-spacing: 1.5px;
                     position: relative;
+                    @media (max-width: $screen-sm){
+                        font-size: 32px;
+                    }
                     &:after{
                         position: absolute;
                         left: 0;

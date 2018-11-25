@@ -49,8 +49,14 @@ export default {
     flex-wrap: wrap;
     align-items: center;
     padding: 200px 100px;
+    @media(max-width: $screen-sm){
+        padding: 30px 15px 50px;
+    }
     &_title{
         width: 40%;
+        @media(max-width: $screen-sm){
+            width: 100%;    
+        }
         .title-big{
             position: relative;
             &::before{
@@ -63,6 +69,9 @@ export default {
     }
     .quote{
         width: 60%;
+        @media(max-width: $screen-sm){
+            width: 100%;    
+        }
         &_slide{
             &-opinion{
                 text-align: center;

@@ -112,6 +112,9 @@ export default {
 .projects{
     background-color: #151617;
     padding: 100px 10%;
+    @media(max-width: $screen-sm){
+        padding: 20px 10%;       
+    }
     &_wrapper{
         display: flex;
         flex-wrap: wrap;
@@ -128,6 +131,11 @@ export default {
             display: flex;
             justify-content: center;
             align-items: center;
+            @media(max-width: $screen-sm){
+                width: 100%;
+                margin: 20px auto;
+                max-width: 320px;
+            }
             &-image{
                 position: absolute;
                 margin: 0;

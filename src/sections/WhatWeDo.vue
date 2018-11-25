@@ -74,6 +74,9 @@ export default {
 @import '~styles/global.scss';
 .whatwedo{
     padding: 0 100px;
+    @media(max-width: $screen-sm){
+        padding: 0 15px;       
+    }
     &-title{
         position: relative;
         &:before{
@@ -84,8 +87,14 @@ export default {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        @media(max-width: $screen-sm){
+            flex-direction: column;
+        }
         .whatwedo_item{
             width: 30%;
+            @media(max-width: $screen-sm){
+                width: 100%;
+            }
             &-title{
                 display: flex;
                 align-items: center;
@@ -98,6 +107,10 @@ export default {
                 font-size: 18px;
                 color: $light-grey;
                 line-height: 36px;
+                @media(max-width: $screen-sm){
+                    font-size: 16px;
+                    line-height: 22px;
+                }
             }
         }
     }

@@ -40,6 +40,10 @@ export default {
     transition: color 0.25s;
     position: relative;
     padding: 10px;
+    @media(max-width: $screen-sm){
+        font-size: 30px;
+        margin: 10px;
+    }
     &::before,
     &::after{
         border: 2px solid transparent;
@@ -87,6 +91,11 @@ export default {
     background-position: 500px 0;
     display: flex;
     margin-top: 250px;
+    @media(max-width: $screen-sm){
+        margin-top: 100px;
+        flex-direction: column;
+        background-position: center;
+    }
     &_work{
         padding: 150px 100px;
         clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
@@ -94,11 +103,19 @@ export default {
         background-color: #151617;
         margin-top: -50px;
         margin-bottom: 50px;
+        @media(max-width: $screen-sm){
+            margin-top: 0;
+            width: 100%;
+            padding: 10px 15px;
+        }
     }
     &_box{
         &-single{
             display: flex;
             justify-content: space-around;
+            @media(max-width: $screen-sm){
+                flex-direction: column;
+            }
             .plan_box-title{
                 @extend %single-mark;
             }
@@ -107,9 +124,16 @@ export default {
     &_features{
         padding: 100px;
         width: 50%;
+        @media(max-width: $screen-sm){
+            padding: 10px 15px;
+            width: 100%;    
+        }
         &-single{
             display: flex;
             justify-content: space-between;
+            @media(max-width: $screen-sm){
+                flex-direction: column;
+            }
             .plan_features-title{
                 @extend %single-mark;
             }

@@ -44,14 +44,27 @@ export default {
         padding: 100px;
         max-width: 1600px;
         margin: 0 auto;
+        @media(max-width: $screen-sm){
+            padding: 10px 15px;    
+        }
     }
     .footer_wrapper{
         display: flex;
         align-items: center;
         padding: 0 100px;
+        @media(max-width: $screen-sm){
+            flex-direction: column;
+            padding: 0 15px;    
+        }
     }
     .footer_content_right{
         margin-left: 150px;
+        img{
+            max-width: 100%;
+        }
+        @media(max-width: $screen-sm){
+            margin-left: 0;    
+        }
     }
     .footer_label{
         text-transform: uppercase;
@@ -63,9 +76,15 @@ export default {
         font-size: 32px;
         font-weight: 700;
         margin: 5px 0 30px;
+        @media(max-width: $screen-sm){
+            font-size: 24px;    
+        }
     }
     .footer_details{
         margin-top: 50px;
+        @media(max-width: $screen-sm){
+            margin-top: 20px;    
+        }
         .footer_position,
         .footer_mail,
         .footer_phone{
@@ -78,6 +97,9 @@ export default {
     .copyright{
         padding: 15px 0;
         background-color: #151617;
+        @media(max-width: $screen-sm){
+            padding: 15px;    
+        }
         .copyright_wrapper{
             max-width: 1600px;
             margin: 0 auto;

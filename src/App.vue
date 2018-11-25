@@ -1,13 +1,15 @@
 <template>
   <div id="app">
-    <router-view/>
-    <Jumbotron />
-    <AboutUs />
-    <WhatWeDo />
-    <Plan />
-    <Opinions />
-    <Projects />
-    <Footer />
+    <div class="page_wrapper">
+      <router-view/>
+      <Jumbotron :window_width="window.width" />
+      <AboutUs :window_width="window.width" />
+      <WhatWeDo />
+      <Plan />
+      <Opinions />
+      <Projects />
+      <Footer />
+    </div>
   </div>
 </template>
 
@@ -30,6 +32,25 @@ export default {
     Opinions,
     Projects,
     Footer
+  },
+  data(){
+    return {
+      window: {
+        width: 0
+      }
+    }
+  },
+  created(){
+    window.addEventListener('resize', this.handleResize)
+    this.handleResize();
+  },
+  destroyed() {
+    window.removeEventListener('resize', this.handleResize)
+  },
+  methods: {
+    handleResize(){
+      this.window.width = window.innerWidth;
+    }
   } 
 }
 </script>
