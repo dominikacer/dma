@@ -1,5 +1,5 @@
 <template>
-    <div class="opinions">
+    <div id='opinions' class="opinions">
         <div class="opinions_title">
             <h2 class="title-big" data-aos="fade-up" data-aos-delay="350">Our clients say about working together<span class="accent">?</span></h2>
         </div>

@@ -6,6 +6,7 @@ import router from './router'
 
 import AOS from "aos"
 import "aos/dist/aos.css"
+import VueScrollTo from 'vue-scrollto'
 
 Vue.config.productionTip = false
 
@@ -13,6 +14,7 @@ Vue.config.productionTip = false
 new Vue({
   created() {
     AOS.init();
+    Vue.use(VueScrollTo);
   },
   el: '#app',
   router,

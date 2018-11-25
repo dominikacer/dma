@@ -1,5 +1,5 @@
 <template>
-    <section id="whatwedo " class="whatwedo">
+    <section id="whatwedo" class="whatwedo">
         <h2 class="whatwedo-title title-big">What We Do</h2>
     <div class="whatwedo-wrapper">
         <div class="whatwedo_item" data-aos="zoom-in" data-aos-delay="100">

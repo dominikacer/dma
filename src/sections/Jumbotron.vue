@@ -29,11 +29,11 @@
                     </div>
                     <div v-else key="2" v-bind:class="{active : !showMenu}" v-on:click="showMenu = !showMenu"  class="hello-menu">
                         <ul class="hello-menu-wrapper">
-                            <li class="hello-menu-item"><a class='hello-menu-item-link' href="#">About us</a></li>
-                            <li class="hello-menu-item"><a class='hello-menu-item-link' href="#">Clients</a></li>
-                            <li class="hello-menu-item"><a class='hello-menu-item-link' href="#">Projects</a></li>
-                            <li class="hello-menu-item"><a class='hello-menu-item-link' href="#">Career</a></li>
-                            <li class="hello-menu-item"><a class='hello-menu-item-link' href="#">Contact</a></li>
+                            <li class="hello-menu-item"><a class='hello-menu-item-link' href="#AboutUs" v-scroll-to="'#AboutUs'">About us</a></li>
+                            <li class="hello-menu-item"><a class='hello-menu-item-link' href="#" v-scroll-to="'#whatwedo'">What We Do</a></li>
+                            <li class="hello-menu-item"><a class='hello-menu-item-link' href="#" v-scroll-to="'#projects'">Projects</a></li>
+                            <li class="hello-menu-item"><a class='hello-menu-item-link' href="#" v-scroll-to="'#opinions'">Opinions</a></li>
+                            <li class="hello-menu-item"><a class='hello-menu-item-link' href="#" v-scroll-to="'#footer'">Contact</a></li>
                         </ul>
                     </div>
                 </transition>
@@ -43,6 +43,8 @@
 </template>
 
 <script>
+import vuescroll from 'vue-scrollto';
+
 export default {
     name: 'Jumbotron',
     props: [
@@ -65,7 +67,7 @@ export default {
             }, 3000)
             
         }
-    },
+    }
 }
 </script>
 <style lang="scss">

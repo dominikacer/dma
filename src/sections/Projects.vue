@@ -1,5 +1,5 @@
 <template>
-    <div class="projects">
+    <div id="projects" class="projects">
         <h2 class="title-big light" data-aos="fade-up" data-aos-delay="350">Recent Projects<span class="accent">.</span></h2>
         <div class="projects_wrapper">
             <div class="single_project" data-aos="flip-up" data-aos-delay="500">
@@ -94,9 +94,6 @@ export default {
         return{
 
         }
-    },
-    components: {
-        vanillatilt
     },
     mounted() {
         VanillaTilt.init(document.querySelectorAll(".single_project"), {
